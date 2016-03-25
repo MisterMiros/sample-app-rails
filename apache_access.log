@@ -1,0 +1,4 @@
+10.0.2.2 - - [25/Mar/2016:10:07:56 +0500] "GET /static_pages/home HTTP/1.1" 200 1651 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:10:08:00 +0500] "GET /assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 445 "http://mistermiros.ddns.net/static_pages/home" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:10:08:00 +0500] "GET /assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 477 "http://mistermiros.ddns.net/static_pages/home" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:10:08:01 +0500] "GET /favicon.ico HTTP/1.1" 200 295 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
