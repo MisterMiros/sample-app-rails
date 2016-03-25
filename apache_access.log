@@ -21,3 +21,7 @@
 10.0.2.2 - - [25/Mar/2016:11:49:12 +0500] "GET /assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 200 861 "http://mistermiros.ddns.net/static_pages/home" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
 10.0.2.2 - - [25/Mar/2016:12:01:49 +0500] "GET /static_pages/help HTTP/1.1" 200 1716 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
 10.0.2.2 - - [25/Mar/2016:12:01:55 +0500] "GET /static_pages/about HTTP/1.1" 200 1747 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:12:31:11 +0500] "GET /static_pages/ HTTP/1.1" 404 19036 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:12:31:19 +0500] "GET /static_pages/home HTTP/1.1" 200 1714 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:12:31:28 +0500] "GET /static_pages/help HTTP/1.1" 200 1744 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [25/Mar/2016:12:31:41 +0500] "GET /static_pages/about HTTP/1.1" 200 1761 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
