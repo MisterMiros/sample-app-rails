@@ -5,13 +5,13 @@ gem 'rails', '4.2.6'
 gem 'pg'
 
 group :development, :test do
+  gem 'spring'
   gem 'rspec-rails'
   gem 'guard-rspec'
 end
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
-  gem 'libnotify'
 end
 
 gem 'sass-rails', '~> 5.0'
