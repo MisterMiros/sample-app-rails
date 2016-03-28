@@ -24,4 +24,5 @@ doc/
 .DS_Store
 .idea
 .secret
-apache_*.log
+apache_error.log
+apache_access.log
