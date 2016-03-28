@@ -295,3 +295,7 @@
 10.0.2.2 - - [28/Mar/2016:17:40:41 +0500] "GET / HTTP/1.1" 200 2215 "http://mistermiros.ddns.net/signup" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
 10.0.2.2 - - [28/Mar/2016:17:40:42 +0500] "GET /assets/rails-logo-94d4e871a7af4eee1cbfaa9e0ddae1c7b9d9d5d224dfed30a89726b371e69803.svg HTTP/1.1" 304 268 "http://mistermiros.ddns.net/signup" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
 10.0.2.2 - - [28/Mar/2016:17:40:44 +0500] "GET /signup HTTP/1.1" 200 2057 "http://mistermiros.ddns.net/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [28/Mar/2016:18:54:18 +0500] "GET /contact HTTP/1.1" 200 2051 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [28/Mar/2016:18:54:22 +0500] "GET /favicon.ico HTTP/1.1" 304 178 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [28/Mar/2016:19:41:35 +0500] "GET / HTTP/1.1" 200 2214 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+10.0.2.2 - - [28/Mar/2016:19:41:37 +0500] "GET /signup HTTP/1.1" 200 2054 "http://mistermiros.ddns.net/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
