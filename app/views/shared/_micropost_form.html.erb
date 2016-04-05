@@ -1,0 +1,13 @@
+<%= form_for(@micropost) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+      <%= f.text_area :content,
+                      placeholder: "Compose new micropost...",
+                      class:       "form-control",
+                      max_length:  140 %>
+    </div>
+    <div class="post-group">
+      <span id="micropost_symbol_count">140</span>
+      <%= f.submit "Post", class: "btn bnt-large btn-primary" %>
+    </div>
+<% end %>

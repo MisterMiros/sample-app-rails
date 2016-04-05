@@ -60,6 +60,18 @@ describe "Authentication" do
         end
       end
 
+      describe "in the Microposts controller" do
+        describe "submitting to the create action" do
+          before { post microposts_path }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
+
+        describe "submitting to the destroy action" do
+          before { delete micropost_path(FactoryGirl.create(:micropost)) }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
+      end
+
       describe "when attempting to visit a protected page" do
         before do
           visit edit_user_path(user)
@@ -135,7 +147,9 @@ describe "Authentication" do
             sign_in user
             visit signup_path
           end
-          it { should have_selector('div.jumbotron') }
+          it "should redirect to root" do
+            expect(current_path).to eq root_path
+          end
         end
 
         describe "when attemptig to create user" do
