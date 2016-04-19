@@ -176,5 +176,14 @@ describe User do
       expect(@user.followed_users).to include(other_user)
     end
 
+    describe "and unfollowing" do
+      before { @user.unfollow!(other_user) }
+
+      it { should_not be_following(other_user) }
+      it "followed users should not include other user" do
+        expect(@user.followed_users).not_to include(other_user)
+      end
+    end
+
   end
 end
