@@ -171,10 +171,10 @@ describe User do
       @user.follow!(other_user)
     end
 
-    it { should be_followind(other_user) }
+    it { should be_following(other_user) }
     it "followed users should include other user" do
-      expect(user.followed_user).to include(other_user)
+      expect(@user.followed_users).to include(other_user)
     end
-    
+
   end
 end
