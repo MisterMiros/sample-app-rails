@@ -19,16 +19,18 @@ describe User do
   it { should respond_to(:feed) }
   it { should respond_to(:relationships) }
   it { should respond_to(:followed_users) }
-  
+  it { should respond_to(:following?) }
+  it { should respond_to(:follow!) }
+
   it { should be_valid }
   it { should_not be_admin }
-  
+
   describe "with admin attribute set to 'true'" do
     before do
       @user.save!
       @user.toggle!(:admin)
     end
-    
+
     it { should be_admin }
   end
 
@@ -162,4 +164,17 @@ describe User do
 
   end
 
+  describe "following" do
+    let(:other_user) { FactoryGirl.create(:user) }
+    before do
+      @user.save
+      @user.follow!(other_user)
+    end
+
+    it { should be_followind(other_user) }
+    it "followed users should include other user" do
+      expect(user.followed_user).to include(other_user)
+    end
+    
+  end
 end
