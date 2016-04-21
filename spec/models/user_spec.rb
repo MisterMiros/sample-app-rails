@@ -191,7 +191,7 @@ describe User do
     describe "followed user" do
       subject { other_user }
       it "other user followes should include user" do
-        expect(ohter_user.followers).to include(@user)
+        expect(other_user.followers).to include(@user)
       end
     end
   end
