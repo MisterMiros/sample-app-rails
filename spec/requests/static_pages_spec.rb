@@ -42,10 +42,11 @@ describe "Static pages" do
           other_user.follow!(user)
           visit root_path
         end
-      end
 
-      it { should have_link("0 following", href: following_user_path(user)) }
-      it { should have_link("1 follower", href: followers_user_path(user)) }
+        it { should have_link("0 following", href: following_user_path(user)) }
+        it { should have_link("1 follower", href: followers_user_path(user)) }
+
+      end
 
       it "should render right amount of messages" do
         expect(page).to have_content("#{user.feed.count} microposts")
