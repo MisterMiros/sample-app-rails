@@ -106,6 +106,20 @@ describe "Authentication" do
         it { should_not have_link('Users', href: users_path) }
         it { should have_link('Sign in', href: signin_path) }
       end
+      
+      describe "in the Relationships controller" do
+        
+        describe "submitting to the create action" do
+          before { post relationships_path }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
+        
+        describe "submitting to the destroy action" do
+          before { delete relationsips_path(1) }
+          specify { expect(response).to redirect_to(signin_path) }
+        end
+        
+      end
 
     end
 
@@ -155,9 +169,9 @@ describe "Authentication" do
         describe "when attemptig to create user" do
           let(:params) do
             {user: {name: "New user",
-                    email: "new_user@example.com",
-                    password: "foobar",
-                    password_confirmation: "foobar"}}
+                email: "new_user@example.com",
+                password: "foobar",
+                password_confirmation: "foobar"}}
           end
           before do
             sign_in user, no_capybara: true
