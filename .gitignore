@@ -26,3 +26,4 @@ doc/
 .secret
 apache_error.log
 apache_access.log
+/nbproject
