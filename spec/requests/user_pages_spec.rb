@@ -146,7 +146,7 @@ describe "User pages" do
         it "should decrement the followed user count" do
           expect do
             click_button "Unfollow"
-          end.to change(user.follower_users, :count).by(-1)
+          end.to change(user.followed_users, :count).by(-1)
         end
         
         it "should decrement the other user's followers count" do
