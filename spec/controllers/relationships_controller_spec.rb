@@ -10,7 +10,7 @@ describe RelationshipsController do
   describe "creating a relationship with Ajax" do
     it "should increment the Relationship count" do
       expect do
-        xhr :post, :create, relationship: { follower_id: other_user.id }
+        xhr :post, :create, relationship: { followed_id: other_user.id }
       end.to change(Relationship, :count).by(1)
     end
 
@@ -23,7 +23,7 @@ describe RelationshipsController do
   describe "destroying a relationship with Ajax" do
 
     before { user.follow!(other_user) }
-    let(:relationship) { user.realtionships.find_by(followed_id: other_user) }
+    let(:relationship) { user.relationships.find_by(followed_id: other_user) }
     it "should decrement ther Relationship count" do
       expect do
         xhr :delete, :destroy, id: relationship.id
